@@ -1,0 +1,98 @@
+header {
+    background: #BBBBBB;
+    padding: 20px 0; /** espaçamento interno no meu cabeçalho para que nada chegue na margem, quero que tudo fiquentro da margem **/
+}
+
+.caixa{
+    position: relative; /** Toda a vez que a gente mexe em posicionamento e a gente está usando posicionamento absoluto, ele fica absoluto em relação a página, ou seja, o novo ponto inicial dele é qualquer ponto que a gente selecionou no navegador. **/
+
+    /** Quando eu quero que ele tenha um ponto absoluto, mas de dentro de alguma caixa, eu preciso que essa caixa levante, eu preciso que essa caixa também tenha um posicionamento, só que agora um posicionamento relativo, eu quero só que ela levante, position relative. **/
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute; /** Para mudar a posição do ponto inicial que ele se encontra **/
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px; /** utilizamos aqui, pois queremos que a separação entre os itens seja maior **/
+    /** Topo, Direita, Abaixo, Esquerda - Equivalem as posições acima (0, 0, 0 ,15) **/
+}
+
+nav a {
+    text-transform: uppercase; /** Gera a visualização de caixa alta dos caracteres escritos utilizados para navegação **/
+    color: #000000; /** Muda a cor dos caracteres para preto **/
+    font-weight: bold; /** Gera a visualização dos caracteres escritos utilizados para navegação como se estivessem em negrito **/
+    font-size: 22px; /** Aumenta o tamanho da fonte **/
+    text-decoration: none; /** Retira a arra que é criada abaixo das palavras utilizadas para navegação **/
+}
+
+nav a:hover {
+    color: #C78C19; /** Comando que evidência o efeito que criamos para quando passarmos o mouse está por cima do elemnto da tag <a> dentro da <nav> **/
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /** Está propriedade faz o navegador entender que os meus 30% de width agora são definitivos, e os pixels espaçamento interno são calculados em relação a eles, ou seja, estão dentro desses 30% os 20px de espaçamento interno **/
+   /** border-color: #000000; **/
+   /** border-width: 2px; **/
+   /** border-style: solid; **/
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover { /** Gera uma mudança visual quando passo o mouse sobre o elemento **/
+    border-color:#C78C19;
+}
+
+.produtos li:active { /** Gera uma mudança visual quando clico com o mouse sobre o elemento **/
+    border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0; /** Podemos escrever também margin-top: 10px **/
+}
+
+footer {
+    text-align: center;
+    background: url("../img/bg.jpg"); /** A´lica imagem de fundo **/
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 20px 0 0;
+}
+
