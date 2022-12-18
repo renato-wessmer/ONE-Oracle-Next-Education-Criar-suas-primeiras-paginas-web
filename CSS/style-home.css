@@ -36,75 +36,32 @@ nav a:hover {
     text-decoration: underline;
 }
 
-#banner {
+.banner {
     width: 100%;
 }
 
-.principal{
-    background-color: #cccccc;
-    padding: 30px;
-}
-
-.titulo-centralizado {
+.titulo-principal {
     text-align: center;
-    color: #000000; /** Muda a cor dos caracteres para preto **/
+    font-size: 2em; /** Quando usamos o em ele aumenta proporcionalmente, no caso, aumentamos em duas vezes o tamanho base **/
+    margin: 0 0 1em;
+}
+
+.principal p{
+    margin: 0 0 1em;    
+}
+
+.principal strong {
     font-weight: bold; /** Gera a visualização dos caracteres escritos utilizados para navegação como se estivessem em negrito **/
-    font-size: 23px;
 }
 
-main strong {
-    color: #000000; /** Muda a cor dos caracteres para preto **/
-    font-weight: bold; /** Gera a visualização dos caracteres escritos utilizados para navegação como se estivessem em negrito **/
-}
-
-p {
-    text-align: center; 
-    margin-top: 25px;
-}
-
-#missao {
-    font-size: 20px;
+.principal em {
     font-style: italic;
 }
 
-em strong {
-    color: #FF0000; /** Procura todos os strongs dentro do em **/
-    font-style: italic;
+.imagensbeneficios {
+    width: 60%;
 }
 
-.beneficios{
-    background-color: #FFFFFF;
-    padding: 20px;
-}
-
-.titulo-beneficios {
-    text-align: center;
-    color: #000000; /** Muda a cor dos caracteres para preto **/
-    font-weight: bold; /** Gera a visualização dos caracteres escritos utilizados para navegação como se estivessem em negrito **/
-    font-size: 19px;
-    margin-bottom: 20px;
-}
-
-section ul {
-    display:inline-block; /** Alinha os conteúdos em uma linha e ocupa somente tamanho do conteúdo, mas com ele é possíevl mexer na largura e espaçamentos **/
-    vertical-align: top; /** Alinha todos os itens pela linha de cima, o padrão do CSS é alinhamento pela linha de baixo **/
-    width: 20%;
-    margin-left: 5%;
-}
-
-.itens {
-    font-style: italic;
-}
-
-ul.circle {
-	list-style-type: disc;
-}
-
-.imagensbeneficios{
-    width: 50%;
-    margin-left: 15%;
-    
-}
 
 footer {
     text-align: center;
