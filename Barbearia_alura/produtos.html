@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!--Passa a informação para o navegador sobre qual versão do HTML esta se utilizando -->
+<html lang="pt-br"> <!-- propriedade lang para informar que a página utiliza português do Brasil -->
+    <head> <!-- Informações que estamos passando para o navegador-->
+        <meta charset="UTF-8"> <!-- <meta> passa informação para o navegador, atributo charset e biblioteca UTF-8 para Unicode, ASCII, e todos os caracteres que são usados na maioria das línguas da Europa, da América Central, América do Norte, América do Sul. A maioria das linguagens com que trabalhamos no dia a dia.o-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produtos - Barbearia Alura</title>  
+        <link rel="stylesheet" href="./CSS/reset.css"> <!-- O arquivo reset.css deve SEMPRE SER o primeiro arquivo para era limpara todas as configurações, pois se ele for colocacado abaixo de outor folhas de estilos de css, ele limpa todos os estilos linkados acima dele. -->
+        <link rel="stylesheet" href="./CSS/produtos.css"> <!-- Traz para o arquivo index as estilizações do arquivo style.css-->
+    </head>
+    <body>
+
+        <header>
+            <div class="caixa">
+                <h1>
+                    <img src="./img/logo.png" alt="Logo da Barbearia Alura"> <!-- A imagem está dentro da tag <h1>, pois ela é a imagem principal da nossa página-->
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li> <!-- Tag <a> serve para criar uma âncora para outro ponto na internet-->
+                        <li><a href="./produtos.html">Produtos</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <ul class="produtos">
+                <li>
+                    <h2>
+                        Cabelo
+                    </h2>
+                    <img src="./img/cabelo.jpg" alt="Imagem estilizada de um cabelo">
+                    <p class="produto-descricao">
+                        Na tesoura ou máquin, como o cliente preferir
+                    </p>
+                    <p class="produto-preco">
+                        R$ 25,00
+                    </p>
+                </li>
+                <li>
+                    <h2>
+                        Barba
+                    </h2>
+                    <img src="./img/barba.jpg" alt="Imagem estilizada de uma barba">
+                    <p class="produto-descricao">
+                        Corte e desenho profissional de barba
+                    </p>
+                    <p class="produto-preco">
+                        R$ 18,00
+                    </p>
+                </li>
+                <li>
+                    <h2>
+                        Cabelo + Barba
+                    </h2>
+                    <img src="./img/cabelo+barba.jpg" alt="Imagem estilizada de um cabelo e barba">
+                    <p class="produto-descricao">
+                        Pacote completo de cabelo e barba
+                    </p>
+                    <p class="produto-preco">
+                        R$ 35,00
+                    </p>
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <img src="./img/logo-branco.png" alt="Logo da Barbearia Alura">
+            <p class="copyright">
+                &copy; Copyright Barbearia Alura - 2022
+            </p>
+        </footer>
+    </body>
+</html> <!-- Conteúdo a ser renderizado no navegador -->
