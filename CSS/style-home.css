@@ -119,7 +119,9 @@ main {
     font-weight: bold;
 }
 
-
+.itens::before{
+    content: "✭"; /** Utilizando o before, podemos adicionar elementos visuais que não podem ser manipulados, pois estamos utilizando direto o CSS3 para manipular dessa formar o que será visto **/
+}
 .imagens-beneficios {
     width: 60%;
 }
