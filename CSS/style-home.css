@@ -122,8 +122,18 @@ main {
 .itens::before{
     content: "★"; /** Utilizando o before, podemos adicionar elementos visuais que não podem ser manipulados, pois estamos utilizando direto o CSS3 para manipular dessa formar o que será visto **/
 }
+
 .imagens-beneficios {
     width: 60%;
+    opacity: 1; /** Utilizado para criar opacidade em elementos **/
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000; /** Utilizado para criar sombras em elementos e textos **/
+    /** (X) (Y) (Faz um gradiente) (Intensidade da borda)**/
+}
+
+.imagens-beneficios:hover {
+    width: 60%;
+    opacity: 0.3;
 }
 
 .video {
