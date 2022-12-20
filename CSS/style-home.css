@@ -141,10 +141,6 @@ main {
     margin: 2em auto;
 }
 
-
-
-
-
 footer {
     text-align: center;
     background: url("../img/bg.jpg"); /** A´lica imagem de fundo **/
@@ -155,4 +151,23 @@ footer {
     color: #FFFFFF;
     font-size: 13px;
     margin: 20px 0 0;
+}
+
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagens-beneficios{
+        width: 100%;
+    }
+
 }
