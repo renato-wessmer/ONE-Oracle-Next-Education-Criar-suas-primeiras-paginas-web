@@ -82,7 +82,7 @@ main {
 
 .mapa{
     padding: 3em 0;
-    background: linear-gradient(#FEFEFE, #888888); /** O linear-gradient permite que você crie um gradiente com diversas cores sem limites, e antes de colocar a orimeira cor é possível escolher a angulação do começo das cores **/
+    background: linear-gradient(#FEFEFE, #888888); /** O linear-gradient permite que você crie um gradiente com diversas cores sem limites, e antes de colocar a orimeira cor é possível escolher a angulação do começo das cores, também é possível escolher qual a porcentagem cada cor ocupa do gradiente **/
 }
 
 .mapa p {
