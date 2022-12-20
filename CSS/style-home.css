@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     background: #BBBBBB;
     padding: 20px 0; /** espaçamento interno no meu cabeçalho para que nada chegue na margem, quero que tudo fiquentro da margem **/
@@ -12,7 +16,7 @@ header {
 }
 
 nav {
-    position: absolute; /** Para mudar a posição do ponto inicial que ele se encontra **/
+    position: absolute; /** Para mudar a posição do ponto inicial que ele se encontra e para sobrepor elementos **/
     top: 110px;
     right: 0;
 }
@@ -40,10 +44,22 @@ nav a:hover {
     width: 100%;
 }
 
+main {
+
+}
+
 .titulo-principal {
     text-align: center;
     font-size: 2em; /** Quando usamos o em ele aumenta proporcionalmente, no caso, aumentamos em duas vezes o tamanho base **/
     margin: 0 0 1em;
+    clear: left; /** Usamos o clear para limpar o efeito do float em todas as class que são afetadas abaixo dele que utilizam a estilização titulo-principal **/
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+	margin: 0 auto;
 }
 
 .principal p{
@@ -58,9 +74,63 @@ nav a:hover {
     font-style: italic;
 }
 
-.imagensbeneficios {
+.utensilios {
+    width: 120px;
+    float:left; /** O uso do float gera um espaço de sombra na página, imagine que estamos vendo de forma inclinada o texto, ai teremos duas camadas, uma com a sombra que ele projeta na página e a outra camada será ele descolado do texto mais na mesma posição, assim o texto pode ocupar o espaço em volta, mas respeitando esse espaço de sombra deixado, quando usamos o float, todos os elemntos abaixo dele passam a ser afetados **/
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888); /** O linear-gradient permite que você crie um gradiente com diversas cores sem limites, e antes de colocar a orimeira cor é possível escolher a angulação do começo das cores **/
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child  { /** Utilizando o first-child, ele aplicará na primeira tag do conjunto de tags que utilizam a class itens o negrito, podemos também usar o last-child e p nth-child, nesse caso podemos selescionar se queremos só os pares ou ímpares ou mesmo uma posição espaecífica **/
+    font-weight: bold;
+}
+
+
+.imagens-beneficios {
     width: 60%;
 }
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+
+
 
 
 footer {
@@ -71,6 +141,6 @@ footer {
 
 .copyright {
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 13px;
     margin: 20px 0 0;
 }
