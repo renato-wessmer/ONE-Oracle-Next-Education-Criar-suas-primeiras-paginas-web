@@ -7,6 +7,11 @@
         <title>Barbearia Alura</title> 
         <link rel="stylesheet" href="./CSS/reset.css"> <!-- O arquivo reset.css deve SEMPRE SER o primeiro arquivo para era limpara todas as configurações, pois se ele for colocacado abaixo de outor folhas de estilos de css, ele limpa todos os estilos linkados acima dele. -->
         <link rel="stylesheet" href="./CSS/style-home.css"> <!-- Traz para o arquivo index as estilizações do arquivo style.css-->
+        <!-- Google fonts início -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Google fonts final -->
     </head>
     <body> 
         <header>
@@ -31,6 +36,7 @@
                 <h2 class="titulo-principal">
                     Sobre a Barbearia Alura
                 </h2>
+                <img class="utensilios"  src="./img/utensilios.jpg" alt="Utensílios da Barbearia Alura com uma foto que mostra alguns utilizados, como pincel de barba, aparelho de barbear, e espuma">
                 <p>Localizada no coração da cidade a
                     <strong>
                         Barbearia Alura
@@ -48,12 +54,26 @@
                 </p>
             </section>
 
-            <section>
-                <div class="beneficios">
-                    <h3 class="titulo-beneficios">
-                        Benefícios
-                    </h3>
-                    <ul class="circle">
+            <section class="mapa">
+                <h3 class="titulo-principal">
+                    Nosso estabelecimento
+                </h3>
+                <p>
+                    Nosso estabelecimento está localizado no coração da cidade
+                </p>
+                <div class="mapa-conteudo">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4499786333854!2d-46.63655908320357!3d-23.588189826593208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sAlura%20-%20Escola%20Online%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1671491821834!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section class="beneficios">
+                
+                <h3 class="titulo-principal">
+                    Benefícios
+                </h3>
+
+                <div class="conteudo-beneficios">
+                    <ul class="lista-beneficios">
                         <li class="itens">
                             Atendimento aos clientes
                         </li>
@@ -66,13 +86,24 @@
                         <li class="itens">
                             Profissionais Qualificados
                         </li>
-                    </ul>
-                    <img class="imagensbeneficios" src="./img/beneficios.jpg" alt="Benefícios da Barbearia Alura com imagem mostrando um profissional cortando a barba do cliente">
+                        <li class="itens">
+                            Pontualidade
+                        </li>
+                        <li class="itens">
+                            Limpeza
+                        </li>
+                    </ul><img class="imagens-beneficios" src="./img/beneficios.jpg" alt="Benefícios da Barbearia Alura com imagem mostrando um profissional cortando a barba do cliente"> <!-- A tag <img> deve estar colada ao final do fechamento da tag </ul>, pois como usamos o display: inline-block, caso esxista um espaço entre elas o navegador interpreta que a lista ficara na parte superiro e e a imagem na parte inferiror, para que fiquem um ao lado do outro é necessário que estejam colado.; -->
                 </div>
+
+                
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>    
             </section>
+
+
         </main>
-
-
 
         <footer>
             <img src="./img/logo-branco.png" alt="Logo da Barbearia Alura">
