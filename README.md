@@ -24,3 +24,4 @@
 ☑️ 1º É preciso instalar a extensão live server (Ritwick Dey) no Visual Studio Code;
 
 ☑️ 2º Versão utilizada v5.7.9.
+
