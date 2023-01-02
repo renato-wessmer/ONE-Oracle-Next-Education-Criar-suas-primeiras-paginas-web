@@ -1,0 +1,163 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
+header {
+    background: #BBBBBB;
+    padding: 0px 0; /** espaçamento interno no meu cabeçalho para que nada chegue na margem, quero que tudo fiquentro da margem **/
+}
+
+nav {
+    position: absolute; /** Para mudar a posição do ponto inicial que ele se encontra e para sobrepor elementos **/
+    top: 220px;
+    right: 0;
+}
+
+
+
+nav a {
+    text-transform: uppercase; /** Gera a visualização de caixa alta dos caracteres escritos utilizados para navegação **/
+    color: #000000; /** Muda a cor dos caracteres para preto **/
+    font-weight: bold; /** Gera a visualização dos caracteres escritos utilizados para navegação como se estivessem em negrito **/
+    font-size: 22px; /** Aumenta o tamanho da fonte **/
+    text-decoration: none; /** Retira a arra que é criada abaixo das palavras utilizadas para navegação **/
+}
+
+nav a:hover {
+    color: #C78C19; /** Comando que evidência o efeito que criamos para quando passarmos o mouse está por cima do elemnto da tag <a> dentro da <nav> **/
+    text-decoration: underline;
+}
+
+.banner {
+    width: 100%;
+}
+
+main {
+
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /** Quando usamos o em ele aumenta proporcionalmente, no caso, aumentamos em duas vezes o tamanho base **/
+    margin: 0 0 1em;
+    clear: left; /** Usamos o clear para limpar o efeito do float em todas as class que são afetadas abaixo dele que utilizam a estilização titulo-principal **/
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+	margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;    
+}
+
+.principal strong {
+    font-weight: bold; /** Gera a visualização dos caracteres escritos utilizados para navegação como se estivessem em negrito **/
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float:left; /** O uso do float gera um espaço de sombra na página, imagine que estamos vendo de forma inclinada o texto, ai teremos duas camadas, uma com a sombra que ele projeta na página e a outra camada será ele descolado do texto mais na mesma posição, assim o texto pode ocupar o espaço em volta, mas respeitando esse espaço de sombra deixado, quando usamos o float, todos os elemntos abaixo dele passam a ser afetados **/
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888); /** O linear-gradient permite que você crie um gradiente com diversas cores sem limites, e antes de colocar a orimeira cor é possível escolher a angulação do começo das cores, também é possível escolher qual a porcentagem cada cor ocupa do gradiente **/
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child  { /** Utilizando o first-child, ele aplicará na primeira tag do conjunto de tags que utilizam a class itens o negrito, podemos também usar o last-child e p nth-child, nesse caso podemos selescionar se queremos só os pares ou ímpares ou mesmo uma posição espaecífica **/
+    font-weight: bold;
+}
+
+.itens::before{
+    content: "★"; /** Utilizando o before, podemos adicionar elementos visuais que não podem ser manipulados, pois estamos utilizando direto o CSS3 para manipular dessa formar o que será visto **/
+}
+
+.imagens-beneficios {
+    width: 60%;
+    opacity: 1; /** Utilizado para criar opacidade em elementos **/
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000; /** Utilizado para criar sombras em elementos e textos **/
+    /** (X) (Y) (Faz um gradiente) (Intensidade da borda)**/
+}
+
+.imagens-beneficios:hover {
+    width: 60%;
+    opacity: 0.3;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+footer {
+    text-align: center;
+    background: url("../img/bg.jpg"); /** Aplica imagem de fundo **/
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagens-beneficios{
+        width: 100%;
+    }
+
+}
